@@ -1,0 +1,39 @@
+@import url(../../constants.css);
+.svg{
+    color: #fff;
+}
+h2{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0;
+}
+.nav_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button_signUp, .button_search{
+    position: relative;
+    display: inline-block;
+    
+}
+.button_search{
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.button_signUp{
+    border: #fff 0.1px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.span{
+    display: flex;
+    flex-direction: row;
+}
+.button_signUp:active{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 0;
+}

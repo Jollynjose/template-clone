@@ -1,0 +1,14 @@
+:root{
+    --black: #121212;
+    --white: #FFFFFF;
+}
+button{
+    background-color: var(--black);
+    text-decoration: none;
+    
+    border: 0;
+    color: var(--white);
+    display: inline;
+    position: relative;
+}
+
