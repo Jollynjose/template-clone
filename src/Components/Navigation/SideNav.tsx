@@ -1,19 +1,26 @@
 import React from "react";
-import classes from './SideNav.module.css';
+// import classes from './SideNav.module.css';
 
 const SideNav: React.FC = () => {
+  const DUMMYTOPICS = [
+    "Technology",
+    "Design",
+    "Culture",
+    "Business",
+    "Politics",
+    "Opinion",
+    "Science",
+    "Health",
+    "Style",
+    "Travel",
+  ];
   return (
     <div>
-      <a href="#">Technology</a>
-      <a href="#">Design</a>
-      <a href="#">Culture</a>
-      <a href="#">Business</a>
-      <a href="#">Politics</a>
-      <a href="#">Opinion</a>
-      <a href="#">Science</a>
-      <a href="#">Health</a>
-      <a href="#">Style</a>
-      <a href="#">Travel</a>
+      {DUMMYTOPICS.map((topic) => (
+        <a key={Math.random()} href="/#">
+          {topic}
+        </a>
+      ))}
     </div>
   );
 };
