@@ -1,37 +1,52 @@
 @import url(../../constants.css);
 .svg{
     color: #fff;
+    position: relative;
 }
-h2{
+.title{
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.334;
-    letter-spacing: 0;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+.subscribe{
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: inherit;
+
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
 }
 .nav_top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
+    padding: 0;
 }
-.button_signUp, .button_search{
-    position: relative;
-    display: inline-block;
-    
-}
+
 .button_search{
     border-radius: 50%;
-    padding: 0.5rem;
+    padding-top:0.3rem ;
+    display: flex;
+    flex-direction: column;
+    justify-self: unset;
 }
 .button_signUp{
-    border: #fff 0.1px solid;
+    border: rgba(85, 85, 85, 0.61) 0.1px solid;
     border-radius: 5px;
-    padding: 0.5rem;
+    width: 75px;
+    
 }
-.span{
+.container_span{
     display: flex;
     flex-direction: row;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-self: center;
 }
 .button_signUp:active{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;

@@ -1,5 +1,5 @@
 import React from "react";
-// import classes from './SideNav.module.css';
+import classes from './SideNav.module.css';
 
 const SideNav: React.FC = () => {
   const DUMMYTOPICS = [
@@ -15,9 +15,9 @@ const SideNav: React.FC = () => {
     "Travel",
   ];
   return (
-    <div>
+    <div className={classes.container}>
       {DUMMYTOPICS.map((topic) => (
-        <a key={Math.random()} href="/#">
+        <a key={Math.random()} className={classes.container_a} href="/#">
           {topic}
         </a>
       ))}

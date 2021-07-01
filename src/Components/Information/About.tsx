@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./UI/Card";
+import Card from "../UI/Card";
 import classes from "./About.module.css";
 const About: React.FC = () => {
   return (
