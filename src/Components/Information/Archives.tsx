@@ -18,8 +18,8 @@ const Archives:React.FC = ()=>{
       ];
       return (
         <Card class={classes.container}>
-          <h2>Archives</h2>
-          {DUMMYDATES.map(date => <a key={Math.random()} href="/#">{date}</a>)}
+          <h2 className={classes.container_title}>Archives</h2>
+          {DUMMYDATES.map(date => <a key={Math.random()} className={classes.container_a} href="/#">{date}</a>)}
         </Card>
       );
 }

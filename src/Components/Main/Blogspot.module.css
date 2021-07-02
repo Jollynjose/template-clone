@@ -1,0 +1,52 @@
+.primary_title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+}
+.secundary_title{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: .5rem;
+}
+.info, .author{
+    font-size: .8rem;
+    font-weight: 300;
+}
+.author{
+    text-decoration: none;
+    color: rgb(144,202,249);
+}
+.author:hover{
+    text-decoration: underline;
+}
+.paragraph{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.heading{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.subtitle{
+    font-size: 1.025rem;
+    font-weight: 400;
+}
+.unorder > *{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem 0;    
+}
+.order > *{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem 0;    
+}
+.article{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.except{
+    padding: 0;
+}

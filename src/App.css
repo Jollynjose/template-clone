@@ -1,53 +1,37 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-header{
-  grid-area: header;
-  
-}
-main{
+main {
   grid-area: main;
-  display: grid;
-  grid-template-columns:repeat(427px, 3) ;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "presetation presetation presetation"
-  "blogpost blogpost aside"
-  ;
-  
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.more {
+  text-transform: none;
+  color: #90caf9;
+  font-weight: lighter;
+  font-size: 1rem;
 }
 
-footer{
-  grid-area: footer;
-}
-.aside{
-  grid-area: aside;
-}
-.presetation{
+.App {
+  min-width: 67px;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
   
-  grid-area: presetation;
 }
-.blogpost{
-  grid-area: blogpost;
-}
-.App{
-    min-width: 67px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "main main main main"
-    "footer footer footer footer"
-    ;
-    
-    
-    
-}
-@media only screen and (min-width:1280px ) {
-    .App{
-      max-width: 1280px;
-      
-    }
+@media only screen and (min-width: 1280px) {
+  .App {
+    max-width: 1280px;
+    padding: 0 1rem 0 1rem;
   }
+}
+@media only screen and (max-width: 1055px) {
+  main {
+    flex-direction: column;
+  }
+}

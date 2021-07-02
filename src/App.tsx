@@ -1,19 +1,20 @@
 import React from "react";
 import Nav from "./Components/Navigation/Nav";
 import "./App.css";
-import SectionImg from "./Components/SectionImg";
-import Information from "./Components/Information/Information";
+import SectionImg from "./Components/Main/SectionImg";
+
 import Footer from "./Components/Footer/Footer";
-import Blogpost from "./Components/Blogpost";
+import Blogpost from "./Components/Main/Blogpost";
+import Information from "./Components/Information/Information";
 
 function App() {
   return (
     <div className="App">
       <Nav/>
+      <SectionImg />
       <main>
-        <SectionImg />
         <Blogpost />
-        <Information />
+        <Information/>
       </main>
       
       <Footer />

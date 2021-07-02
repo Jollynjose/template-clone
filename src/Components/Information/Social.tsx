@@ -46,7 +46,7 @@ const Social: React.FC = () => {
   return (
     <Card class={classes.container}>
       <h6 className={classes.title}>Social</h6>
-      {DUMMYSOCIALS.map(item=><a key={Math.random()} className={classes.item} href="/#">{item.svg}{item.social}</a>)}
+      {DUMMYSOCIALS.map(item=><a key={Math.random()} className={classes.item} href="/#">{item.svg}<span>{item.social}</span></a>)}
     </Card>
   );
 };

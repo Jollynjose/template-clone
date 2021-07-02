@@ -1,3 +1,15 @@
 .container{
-
+    display: flex;
+    flex-direction: column;
+}
+.container_title{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.container_a{
+    text-decoration: none;
+    color: rgb(144,202,249);
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 0 0 .3rem 0;
 }

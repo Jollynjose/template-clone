@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./SectionImg.module.css";
 import SectionImgItems from "./SectionImgItems";
-import Card from "./UI/Card";
+import Card from "../UI/Card";
 
 const SectionImg: React.FC = () => {
   const DUMMYDATA = [
@@ -20,20 +20,22 @@ const SectionImg: React.FC = () => {
       class: "card2",
     },
   ];
+ 
   return (
     <section className={classes.presetation}>
       <Card class={classes.container}>
         <div className={classes.main_content}>
-          <h1 className={classes.title}>
+          <span className={classes.title}>
             Title of a longer featured blog post
-          </h1>
-          <p className={classes.paragraph}>
+          </span>
+          <span className={classes.paragraph}>
             Multiple lines of text that form the lede, informing new readers
             quickly and efficiently about what's most interesting in this post's
             contents.
-            <h6 className={classes.subtitle}>Continue reading...</h6>
-          </p>
+          </span>
+          <span className={classes.subtitle + " more"}>Continue reading...</span>
         </div>
+        
       </Card>
       {DUMMYDATA.map((item) => (
         <SectionImgItems
@@ -42,6 +44,7 @@ const SectionImg: React.FC = () => {
           date={item.date}
           paragraph={item.paragraph}
           alt={item.alt}
+          
         />
       ))}
     </section>

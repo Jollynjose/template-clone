@@ -7,7 +7,7 @@ const Nav: React.FC = () => {
     <header className={classes.container} >
       <TopNav />
       <nav className="nav"> 
-        <hr className={classes.solid}></hr>
+        
         <SideNav />
       </nav>
     </header>
