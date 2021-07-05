@@ -3,7 +3,7 @@ import classes from './Blogspot.module.css'
 
 const Blogpost: React.FC = () => {
   return (
-    <section className="blogpost">
+    <section className={classes.container}>
       <h1 className={classes.primary_title}>From the firehose</h1>
       <article className={classes.article}>
         <h2 className={classes.secundary_title}>Sample blog post</h2>

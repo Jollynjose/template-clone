@@ -10,13 +10,15 @@ import Information from "./Components/Information/Information";
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <SectionImg />
-      <main>
-        <Blogpost />
-        <Information/>
-      </main>
-      
+      <div className="Wrap">
+        <Nav />
+        <SectionImg />
+        <main>
+          <Blogpost />
+          <Information />
+        </main>
+      </div>
+
       <Footer />
     </div>
   );

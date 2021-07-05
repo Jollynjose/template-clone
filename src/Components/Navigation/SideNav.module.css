@@ -1,11 +1,16 @@
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.151);
 }
-
 
 .container_a {
   color: inherit;
@@ -13,7 +18,8 @@
   font-weight:400;
   height: 35px;
   line-height: 20px;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   letter-spacing: 0px;
   text-transform: none; 
 }

@@ -14,9 +14,9 @@ const SectionImgItems: React.FC<{date:string, paragraph: string, alt: string, cl
         <p className={classes.paragraph}>{props.paragraph}</p>
         <span className={classes.more + " more"}>Continue reading...</span>
       </div>
-      <div className={classes.img }>
+      <span className={classes.img }>
         <img src="https://source.unsplash.com/random" alt={props.alt}></img>
-      </div>
+      </span>
       
     </Card>
   );
